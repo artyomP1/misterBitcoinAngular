@@ -1,0 +1,24 @@
+<section class="home-page">
+    <div>
+        <button class="logout" (click)=signOut()> Sign Out </button>
+        <h1 class="user-name">Hello {{user.name}}!</h1>
+    </div>
+    <div class="userDetailsMain">
+        <img class="profile-img" src="https://robohash.org/avi.png?set=set2" alt="" />
+        <div>
+            <h2>Your balance:</h2>
+            <h2> <img
+                    src="https://res.cloudinary.com/artyompogosov/image/upload/v1576857912/yjlsxpfm1qdyg4acrzuv.png" />
+                Coin:{{user.coins}}</h2>
+            <h2> <img
+                    src="https://res.cloudinary.com/artyompogosov/image/upload/v1576777069/z2rgylhqeeoeolganceq.png" />
+                BTC: {{bitCoinRate}}</h2>
+        </div>
+    </div>
+    <!-- {user.moves.length > 0 && (
+      <section class="moves">
+        <h3>Your last 3 Moves:</h3>
+        <MovesList moves={user.moves} />
+      </section>
+    )} -->
+</section>

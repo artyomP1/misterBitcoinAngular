@@ -1,0 +1,9 @@
+<section>
+    <form class="sign-up" (submit)=saveUser(name.value)>
+        <img class="imgBitCoin"
+            src="https://res.cloudinary.com/artyompogosov/image/upload/v1576777069/z2rgylhqeeoeolganceq.png" />
+        <label> Please enter your name: </label>
+        <input #name name="name" type="text" />
+        <button (click)="saveUser(name.value)">Sign up</button>
+    </form>
+</section>

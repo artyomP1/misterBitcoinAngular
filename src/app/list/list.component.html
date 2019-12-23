@@ -1,0 +1,7 @@
+<ul class="contacts-list">
+    <li *ngFor="let contact of contacts">
+        <a routerLink="{{contact._id}}">
+            <app-contact-prev [contact]="contact"></app-contact-prev>
+        </a>
+    </li>
+</ul>
